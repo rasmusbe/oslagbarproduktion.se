@@ -1,0 +1,24 @@
+@mixin webfont {
+	-webkit-font-smoothing: antialiased;
+}
+
+@mixin font-source-sans-pro {
+	@include webfont;
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+@mixin font-brandon-grotesque {
+	@include webfont;
+	font-weight: normal;
+	font-style: normal;
+	font-family:'Brandon Grotesque W01', serif;
+}
+
+@mixin font-brandon-grotesque-bold {
+	@include webfont;
+	font-weight: 700;
+	font-style: normal;
+	font-family:'Brandon Grotesque W01', serif;
+}

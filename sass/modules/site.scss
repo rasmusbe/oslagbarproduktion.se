@@ -1,0 +1,71 @@
+body {
+	@include font-source-sans-pro;
+	margin: 0 auto;
+	width: 1248px;
+	color: $text-color;
+}
+
+h2 {
+	@include font-brandon-grotesque-bold;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+
+	& + .columns-container {
+		margin-top: 20px;
+	}
+}
+
+h3 {
+	@include font-brandon-grotesque-bold;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+h4 {
+	@include font-brandon-grotesque;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+a {
+	color: #7b7ccb;
+	text-decoration: none;
+}
+
+.section-icon {
+	display: block;
+	margin: 40px auto 20px;
+}
+
+.columns-container {
+	@include clearfix;
+
+	.column-third {
+		float: left;
+		box-sizing: border-box;
+		margin-bottom: 40px;
+		padding: 0 40px;
+		width: 33%;
+		text-align: center;
+
+		&:last-child {
+			float:none;
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+}
+
+.coworker {
+	img {
+		display: block;
+		margin: 0 auto 20px;
+	}
+}
+
+#contact p {
+	line-height: 1.25em;
+}
