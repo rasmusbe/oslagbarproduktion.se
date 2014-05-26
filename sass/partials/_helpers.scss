@@ -1,0 +1,16 @@
+@mixin replace-text($img, $x: 50%, $y: 50%) {
+	@include hide-text;
+	background: {
+		image: url($img);
+		repeat: no-repeat;
+		position: $x $y;
+	};
+}
+
+@mixin hide-text() {
+	$approximate-em-value: 12px / 1em;
+	$wider-than-any-screen: -9999em;
+	text-indent: $wider-than-any-screen * $approximate-em-value;
+	overflow: hidden;
+	text-align: left;
+}
