@@ -51,30 +51,13 @@ a {
 
 
 .columns-container {
-	@include clearfix;
-
-	.flexbox & {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-content: stretch;
-		align-items: flex-start;
-	}
+	text-align: center;
 
 	.column {
-		float: left;
+		display: inline-block;
 		margin-bottom: 40px;
 		padding: 0 40px;
 		width: 264px;
-		text-align: center;
-
-		.flexbox & {
-			float: none;
-			order: 0;
-			flex: 0 1 auto;
-			align-self: auto;
-		}
 	}
 }
 
